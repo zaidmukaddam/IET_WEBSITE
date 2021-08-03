@@ -22,7 +22,7 @@
   width: 100vw;
 }
 .circle1,
-.circle2 {
+.circle2, .circle3 {
   position: absolute;
   height: 20rem;
   width: 20rem;
@@ -37,5 +37,16 @@
 .circle2 {
   left: 75%;
   top: 60%;
+  background: rgb(24,127,255);
+background: linear-gradient(135deg, rgba(24,127,255,1) 0%, rgba(0,255,126,1) 100%);
+}
+
+.circle3{
+top:90%;
+left:10%;
+ height: 10rem;
+  width: 10rem;
+ background: rgb(255,243,24);
+background: linear-gradient(135deg, rgba(255,243,24,1) 0%, rgba(0,230,255,1) 100%); 
 }
 
