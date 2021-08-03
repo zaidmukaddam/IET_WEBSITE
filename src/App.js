@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import NavBar from './components/navbar.js';
+import Header from './components/header.js';
+import 'boxicons';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <main>
+        <NavBar />
+        {/* <meta name="theme-color" content="#872e4e" media="(prefers-color-scheme: dark)" /> */}
+        <section className="glass">          
+        <Header />
+        </section>
+        
+        
+      </main>
+     
+      <div className="circle1"></div>
+      <div className="circle2"></div>
+       
     </div>
+    
   );
 }
 

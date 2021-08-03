@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+#container{
+    z-index: 4;
+    height: 400px !important;
+    position: absolute;
+    top: 30%
+}
+
+#typist{
+font-family: 'Playfair Display', serif;
+font-weight: 600;
+font-size: 3em;
+margin-left: 100px
+}
+
+.quote-small{
+font-family: 'Montserrat', sans-serif;
+font-size:1.5em;
+margin-top: 10px;
+margin-left: 100px;
+margin-right: 40px;
+}
+
+#tiltjs{
+ margin-left: 10.5rem;
+ padding: 2rem;   
+ align-items: center;
+}
+
+.Tilt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /*  background-color: rgb(255, 255, 255); */
+    border:1px;
+    border-color: #ffffff;
+    border-radius: 10px;
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+    background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.2), rgb(255, 255, 255, 0.7));
+    transform-style: preserve-3d;
+    box-shadow: 5px 20px 27px -10px rgba(0, 0, 0, 0.05);
+}
+
+.Tilt-inner {
+  transform: translateZ(100px);
+  font-size:100px;
+}
+
+.quote{
+    z-index:4;
+}
