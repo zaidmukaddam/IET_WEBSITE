@@ -12,7 +12,11 @@ import iet_logo from "../images/IET_LOGO.png";
 
 const Header = () => {
   return (
+<<<<<<< HEAD
     <div className="container-fluid" id="container">
+=======
+    <div className="container-fluid pt-5">
+>>>>>>> a654bcccbfb52f18587907351cdc2d72cab2b8ad
       <div className="row align-items-center">
         <div className="col-sm-12 col-md-6 col-lg-6 align-items-center">
           <div id="typist">
@@ -35,6 +39,7 @@ const Header = () => {
               options={{ max: 50 }}
               style={{ height: 250, width: 250 }}
             >
+<<<<<<< HEAD
               <div className="Tilt-inner">
                 {/* <img src={iet_logo} alt="iet-logo" className="h-100 w-100"/> */}
                 {/*      <Tilt className="Tilt" options={{ max : 25}} style={{ height: 50, width: 50 }}>
@@ -42,6 +47,9 @@ const Header = () => {
                                     </Tilt> */}
                 IET
               </div>
+=======
+              <div className="Tilt-inner">IET</div>
+>>>>>>> a654bcccbfb52f18587907351cdc2d72cab2b8ad
             </Tilt>
           </div>
         </div>
