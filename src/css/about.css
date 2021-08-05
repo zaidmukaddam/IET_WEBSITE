@@ -1,0 +1,14 @@
+.container {
+  /* max-width: 960px; */
+
+  z-index: 7;
+  height: 300rem !important;
+  position: absolute;
+  top: 60%;
+}
+
+.card-deck .card {
+  /* min-width: 220px; */
+  margin: 30rem 2em;
+  padding: auto;
+}
