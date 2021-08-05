@@ -10,11 +10,7 @@
   overflow-x: hidden;
 }
 :root > section {
-<<<<<<< HEAD
-  display: flex;
-=======
   display: flexbox;
->>>>>>> a654bcccbfb52f18587907351cdc2d72cab2b8ad
 }
 
 .glass {
@@ -69,8 +65,6 @@
     rgba(0, 230, 255, 1) 100%
   );
 }
-<<<<<<< HEAD
-=======
 
 /* ! ==========>khush <========== */
 
@@ -93,4 +87,3 @@
 }
 
 
->>>>>>> a654bcccbfb52f18587907351cdc2d72cab2b8ad
