@@ -14,6 +14,7 @@
   z-index: 12;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
+  overflow: visible;
 }
 .card {
   box-shadow: 5px 10px 12px -2px rgb(39, 39, 39, 0.5);
@@ -59,3 +60,14 @@
   top: 65%;
   left: 87%;
 }
+
+/* .iconCircle1 {
+  position: absolute;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  background: rgb(115, 0, 255);
+  top: -20%;
+  left: 45%;
+
+} */

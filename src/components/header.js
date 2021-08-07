@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import TypedReactHooksDemo from "./animation.js";
 import "boxicons";
-import "../css/header.css";
+import "../css/header.scss";
 import "tilt.js";
 import Tilt from "react-tilt";
 import iet_logo from "../images/IET_LOGO.png";
@@ -23,10 +23,9 @@ const Header = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            aliquip ex ea commodo consequat.
           </div>
+          <button id="btn">Explore Events!</button>
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6 align-items-center text-center">
           <div id="tiltjs" className="align-items-center text-center">

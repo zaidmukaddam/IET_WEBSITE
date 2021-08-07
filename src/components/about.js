@@ -19,6 +19,10 @@ const About = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
+            {/*! Figure this out*/}
+            <div className="iconCircle1">
+
+            </div>
           </div>
         </div>
         <div className="card mb-4 box-shadow">
