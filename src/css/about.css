@@ -1,15 +1,61 @@
-/* .container {
-  
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
-  z-index: 7;
-  height: 300rem !important;
+#aboutContainer {
+  position: relative;
+  overflow: visible;
+}
+
+.card-body {
+  background: rgba(162, 81, 255, 0);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  z-index: 12;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+}
+.card {
+  box-shadow: 5px 10px 12px -2px rgb(39, 39, 39, 0.5);
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 12;
+  transition: ease-in-out 700ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 700ms;
+}
+
+.card-title > small {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* *============== Circles ==============*  */
+
+.circle4,
+.circle5 {
   position: absolute;
-  top: 60%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: rgb(140, 48, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(141, 48, 255, 0.205) 0%,
+    rgba(72, 0, 129, 1) 100%
+  );
+  top: 10%;
+  left: 6%;
+  z-index: 11;
 }
-
-.card-deck .card {
-
-  margin: 30rem 2em;
-  padding: auto;
+.circle5 {
+  height: 95px;
+  width: 95px;
+  top: 65%;
+  left: 87%;
 }
- */

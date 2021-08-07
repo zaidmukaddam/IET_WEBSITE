@@ -12,7 +12,7 @@ import iet_logo from "../images/IET_LOGO.png";
 
 const Header = () => {
   return (
-    <div className="container-fluid pt-5">
+    <div className="container" id="headerContainer">
       <div className="row align-items-center">
         <div className="col-sm-12 col-md-6 col-lg-6 align-items-center">
           <div id="typist">

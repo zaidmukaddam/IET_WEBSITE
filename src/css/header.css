@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-#container{
-    z-index: 4;
-    height: 400px !important;
-    position: absolute;
-    top: 30%;
+
+#headerContainer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
 
 #typist{
@@ -24,7 +24,7 @@ margin-right: 40px;
 
 #tiltjs{
  margin-left: 10.5rem;
- padding: 2rem;   
+ padding: 2rem;
  align-items: center;
 }
 
@@ -47,7 +47,7 @@ margin-right: 40px;
   transform: translateZ(100px);
   font-size:100px;
 }
-
+/*
 .quote{
     z-index:4;
-}
+} */

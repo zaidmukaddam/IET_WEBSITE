@@ -5,16 +5,15 @@
   margin: 0;
   overflow-x: hidden;
 }
-
+.card {
+  border: none;
+  border-radius: 20px;
+}
 .back {
   overflow-x: hidden;
 }
-:root > section {
-  display: flexbox;
-}
 
 .glass {
-  display: flex !important;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
@@ -33,24 +32,24 @@
   top: -10%;
   left: -10%;
   border-radius: 50%;
-  background: rgb(175, 67, 199);
+  background: rgb(140, 48, 255);
   background: linear-gradient(
     135deg,
-    rgba(175, 67, 199, 1) 0%,
-    rgba(254, 138, 57, 1) 100%
+    rgba(141, 48, 255, 0.205) 0%,
+    rgba(72, 0, 129, 1) 100%
   );
   z-index: 2;
 }
 
 .circle2 {
-  left: 75%;
+  left: 80%;
   top: 60%;
-  background: rgb(24, 127, 255);
+  /*   background: rgb(24, 127, 255);
   background: linear-gradient(
     135deg,
     rgba(24, 127, 255, 1) 0%,
     rgba(0, 255, 126, 1) 100%
-  );
+  ); */
 }
 
 .circle3 {
@@ -58,20 +57,19 @@
   left: 10%;
   height: 10rem;
   width: 10rem;
-  background: rgb(255, 243, 24);
+  /*   background: rgb(255, 243, 24);
   background: linear-gradient(
     135deg,
     rgba(255, 243, 24, 1) 0%,
     rgba(0, 230, 255, 1) 100%
-  );
+  ); */
 }
 
-/* ! ==========>khush <========== */
+/* ! ==========> khush <========== */
 
-.container {
+/* .container {
   width: 100%;
-  height: 100%;
-}
+} */
 
 .background,
 .forground {
@@ -85,5 +83,3 @@
 .forground {
   z-index: 10;
 }
-
-
