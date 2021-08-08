@@ -1,7 +1,7 @@
 import "../css/navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import iet_logo from "../images/IET_LOGO.png";
+// import iet_logo from "../images/IET_LOGO.png";
 import "boxicons";
 
 const NavBar = () => {
@@ -9,7 +9,8 @@ const NavBar = () => {
     // Navbar section
     <nav className="navbar navbar-expand-sm fixed-top" id="Navbar">
       <div className="container my-2 ">
-      {/*   <a href="/" className="navbar-brand">
+        {/*! Fix the icon  */}
+        {/* <a href="/" className="navbar-brand">
           <img
             src={iet_logo}
             className="image-fluid"
@@ -26,8 +27,7 @@ const NavBar = () => {
           data-toggle="collapse"
           data-target="#collapseNav"
         >
-          {/* <span className="fas fa-bars text-light"></span> */}
-          <box-icon name="menu" color="black"></box-icon>
+          <box-icon name="menu" color="black" crossOrigin></box-icon>
         </button>
         <div className="collapse navbar-collapse flex-grow-0" id="collapseNav">
           <div className="navbar-nav">

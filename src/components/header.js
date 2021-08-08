@@ -8,7 +8,7 @@ import "boxicons";
 import "../css/header.scss";
 import "tilt.js";
 import Tilt from "react-tilt";
-import iet_logo from "../images/IET_LOGO.png";
+// import iet_logo from "../images/IET_LOGO.png";
 
 const Header = () => {
   return (
