@@ -1,26 +1,34 @@
+/* !============ For eventTest.js ============  */
+
 #eventContainer {
-  height: 50vh;
-  width: 100vh;
-  border-radius: 20px;
+  height: 900px;
+  /* margin: 1em; */
+  overflow: visible;
+
+  h6 {
+    padding: 1em;
+  }
+
+  img {
+    height: 20em;
+    width: auto;
+    padding: auto;
+    border-radius: 20px;
+  }
 }
 
-#eventContainerSlider {
-  border-radius: 20px;
+@media (max-width: 768px) {
+  #first,
+  #second,
+  #third,
+  #fourth,
+  #fifth {
+    width: 300px !important;
+    height: 400px !important;
+  }
 }
 
-.aws-btn {
-  --slider-height-percentage: 60%;
-  --slider-transition-duration: 770ms;
-  --organic-arrow-thickness: 7px;
-  --organic-arrow-border-radius: 10px;
-  --organic-arrow-height: 26px;
-  --organic-arrow-color: #056a78;
-  --control-button-width: 10%;
-  --control-button-height: 25%;
-  --control-button-background: transparent;
-  --control-bullet-color: #3a8779;
-  --control-bullet-active-color: #317367;
-  --loader-bar-color: transparent;
-  --loader-bar-height: 6px;
-}
-
+/* #first,#second, #third, #fourth, #fifth{
+  backdrop-filter: blur(1rem) !important;
+   -webkit-backdrop-filter: blur(1rem) !important;
+} */

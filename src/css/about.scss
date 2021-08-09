@@ -4,36 +4,36 @@
 #aboutContainer {
   position: relative;
   overflow: visible;
-}
 
-.card-body {
-  background: rgba(162, 81, 255, 0);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 20px;
-  z-index: 12;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
-  overflow: visible;
-}
-.card {
-  box-shadow: 5px 10px 12px -2px rgb(39, 39, 39, 0.5);
-  margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.1);
-  z-index: 12;
-  transition: ease-in-out 700ms;
-}
+  .card-body {
+    background: rgba(162, 81, 255, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    z-index: 12;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    overflow: visible;
+  }
+  .card {
+    box-shadow: 5px 10px 12px -2px rgb(39, 39, 39, 0.5);
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 12;
+    transition: ease-in-out 700ms;
+  }
 
-.card:hover {
-  transform: scale(1.05);
-  transition: ease-in-out 700ms;
-}
+  .card:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 700ms;
+  }
 
-.card-title > small {
-  font-family: "Playfair Display", serif;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  .card-title > small {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
 }
 
 /* *============== Circles ==============*  */

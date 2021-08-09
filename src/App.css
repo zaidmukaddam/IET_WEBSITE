@@ -80,7 +80,7 @@ a:hover {
   );
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
- /*  z-index: 3; */
+  /*  z-index: 3; */
   position: relative;
   /* ?Try this */
   margin: 100px 50px 50px 50px;
@@ -91,7 +91,7 @@ a:hover {
   border-radius: 20px;
   /* overflow-y: visible; */
   box-shadow: 2px 4px 32px -10px rgb(39, 39, 39);
-  height: auto;
+  height: max-content;
 }
 .circle1,
 .circle2,
@@ -140,3 +140,10 @@ a:hover {
 /* .container {
   width: 100%;
 } */
+
+@media (max-width: 768px) {
+  .glass {
+    margin: 0 !important;
+    padding: 0;
+  }
+}

@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../App.css";
 import "boxicons";
-import "../css/about.css";
+import "../css/about.scss";
 
 const About = () => {
   return (

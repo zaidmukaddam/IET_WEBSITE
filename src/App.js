@@ -6,8 +6,10 @@ import Events from "./components/event.js";
 import Footer from "./components/footer.js";
 import "boxicons";
 function App() {
-  /*   var glass = document.querySelector(".glass");
+/*   var glass = document.getElementsByClassName("glass");
+  glass.style.height = "100px";
   var glassHeight = glass.clientHeight + "px"; */
+
   return (
     <div className="container">
       <div className="background">
@@ -19,7 +21,7 @@ function App() {
         <main>
           <NavBar />
           {/* <meta name="theme-color" content="#872e4e" media="(prefers-color-scheme: dark)" /> */}
-          <section className="glass" /* style={{ height:  glassHeight  }} */>
+          <section className="glass" /* style={{ height: glass }} */>
             <Header />
             <About />
             <Events />
