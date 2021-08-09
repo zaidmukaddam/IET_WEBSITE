@@ -30,7 +30,7 @@ const Footer = () => {
               Contact Us
             </a>
           </div>
-          <div className="col-12 col-md-4 text-dark text-justify py-3 px-5">
+          <div className="col-12 col-md-4 text-dark text-justify py-3 px-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-dark py-3 text-center">
+        <div className="text-dark py-5 text-center">
           Copyright © IET MPSTME on Campus {year}
         </div>
       </div>

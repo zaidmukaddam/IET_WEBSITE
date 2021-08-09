@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 .background,
-.forground {
+.foreground {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -15,8 +15,22 @@
   left: 0;
 }
 
-.forground {
+/* ?Try this */
+
+.background {
+  background: rgb(248, 225, 240);
+  background: linear-gradient(
+    135deg,
+    rgba(248, 225, 240, 1) 0%,
+    rgba(243, 160, 254, 1) 45%,
+    rgba(87, 79, 184, 1) 100%
+  );
+}
+.foreground {
+  /* !Try making this smaller so that you get a card layout */
   z-index: 10;
+  /*   border-radius: 20px;
+  margin: 50px 50px 50px 50px; */
 }
 
 a,
@@ -57,14 +71,27 @@ a:hover {
 /* !================= Blurred elements =================! */
 
 .glass {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(2rem);
-  -webkit-backdrop-filter: blur(2rem);
-  border: 1px solid rgba(85, 56, 56, 0.18);
-  z-index: 3;
+  /* ?Try this */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.65) 100%
+  );
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+ /*  z-index: 3; */
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  /* ?Try this */
+  margin: 100px 50px 50px 50px;
+  /* height: 100%; */
+  /*width: 100vw; */
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  /* ?Try this */
+  border-radius: 20px;
+  /* overflow-y: visible; */
+  box-shadow: 2px 4px 32px -10px rgb(39, 39, 39);
+  height: auto;
 }
 .circle1,
 .circle2,
@@ -100,15 +127,13 @@ a:hover {
   left: 10%;
   height: 10rem;
   width: 10rem;
-  /*   background: rgb(255, 243, 24);
+  /*    background: rgb(255, 243, 24);
   background: linear-gradient(
     135deg,
     rgba(255, 243, 24, 1) 0%,
     rgba(0, 230, 255, 1) 100%
   ); */
 }
-
-
 
 /* ! ==========> khush <========== */
 
