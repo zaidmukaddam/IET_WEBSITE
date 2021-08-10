@@ -12,8 +12,8 @@ import Tilt from "react-tilt";
 
 const Header = () => {
   return (
-    <div className="container" id="headerContainer">
-      <div className="row align-items-center">
+    <div className="container-fluid my-5" id="headerContainer">
+      <div className="row align-items-center mx-5">
         <div className="col-sm-12 col-md-6 col-lg-6 align-items-center">
           <div id="typist">
             {/*  <box-icon name="quote" id="quote" color="black" size="100px"></box-icon>  */}
@@ -28,9 +28,9 @@ const Header = () => {
           <button id="btn">Explore Events!</button>
         </div>
         <div className="col-sm-12 col-md-6 col-lg-6 align-items-center text-center">
-          <div id="tiltjs" className="align-items-center text-center">
+          <div id="tiltjs" className="align-items-center text-center mx-auto">
             <Tilt
-              className="Tilt align-items-center"
+              className="Tilt align-items-center mx-auto"
               options={{ max: 50 }}
               style={{ height: 250, width: 250 }}
             >

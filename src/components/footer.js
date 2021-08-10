@@ -1,13 +1,15 @@
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import { SocialIcon } from 'react-social-icons';
 import "../css/footer.scss";
 
 const year = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div className="container-fluid" id="footerBackground">
+    <div className="container-fluid mt-5" id="footerBackground">
+       <div className="footerGradient"></div>
       <div
         className="container-fluid text-center align-items-center"
         id="footer"
@@ -44,6 +46,9 @@ const Footer = () => {
               <b>Social</b>
             </h5>
             {/* ! Import correct logos */}
+            <SocialIcon className="social-icons" url="https://instagram.com/jaketrent" />
+            <SocialIcon className="social-icons" url="https://github.com/jaketrent" />
+            <SocialIcon className="social-icons" url="https://twitter.com/jaketrent" />
           </div>
         </div>
 
@@ -51,7 +56,7 @@ const Footer = () => {
           Copyright © IET MPSTME on Campus {year}
         </div>
       </div>
-      <div className="footerGradient"></div>
+     
     </div>
   );
 };

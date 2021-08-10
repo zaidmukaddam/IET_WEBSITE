@@ -1,24 +1,23 @@
 import "../css/navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-// import iet_logo from "../images/IET_LOGO.png";
+import iet_logo from "../images/IET_LOGO.png";
 import "boxicons";
-
 const NavBar = () => {
   return (
     // Navbar section
     <nav className="navbar navbar-expand-sm fixed-top" id="Navbar">
-      <div className="container my-2 ">
+      <div className="container-fluid mx-3">
         {/*! Fix the icon  */}
-        {/* <a href="/" className="navbar-brand">
+        <a href="/" className="navbar-brand">
           <img
             src={iet_logo}
             className="image-fluid"
             alt="iet-logo"
-            width="3%"
-            height="3%"
+            // width="3%"
+            // height="3%"
           />
-        </a> */}
+        </a>
         <button className="btn ml-auto mx-3" id="btn">
           Contact Us
         </button>

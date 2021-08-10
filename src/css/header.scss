@@ -4,7 +4,7 @@
 #headerContainer {
   margin-top: 100px;
   margin-bottom: 100px;
-
+  position: relative;
   #btn {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -23,12 +23,12 @@
 .quote-small {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
-  margin-top: 10px;
-  margin-right: 40px;
+  /* margin-top: 10px;
+  margin-right: 40px; */
 }
 
 #tiltjs {
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .Tilt {
@@ -50,7 +50,7 @@
 }
 
 .Tilt-inner {
-  transform: translateZ(100px);
+  transform: translateZ(200px);
   font-size: 100px;
 }
 /*

@@ -7,7 +7,7 @@
 
 #footerBackground {
   z-index: 10;
-  position: absolute;
+  position: relative;
   margin: 100px 0 0 0;
 
 }
@@ -34,7 +34,7 @@
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -43,4 +43,11 @@
     rgb(187, 131, 255) 100%
   );
   z-index: 10;
+}
+
+.social-icons{
+  margin: .4em !important;
+  display: inline-block;
+  grid-template-rows: auto;
+  transform: scale(0.7);
 }

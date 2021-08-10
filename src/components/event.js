@@ -1,154 +1,153 @@
-import React, { Component } from "react";
-import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../css/events.scss";
-import ReactCardCarousel from "react-card-carousel";
 
-class Events extends Component {
-  static get CARD_STYLE() {
-    return {
-      height: "max-content",
-      width: "auto",
-      paddingTop: "80px",
-      textAlign: "center",
-      background:
-        "linear-gradient(to bottom right, rgba(248,225,240,1),rgba(243,160,254,1),rgba(87,79,184,1) )",
-      color: "#FFF",
-      fontSize: "12px",
-      textTransform: "uppercase",
-      borderRadius: "10px",
-      // boxShadow: "2px 4px 32px -10px rgb(39, 39, 39)",
-    };
-  }
-  render() {
-    return (
-      <div className="container-fluid" id="eventContainer">
-        <ReactCardCarousel autoplay={false} autoplay_speed={2500} spread="wide">
-          <div style={Events.CARD_STYLE} id="first">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1628438273202-a26e785d044f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80"
-                alt="test"
-              />
+const Events = () => {
+  return(
+  <div className="container-fluid my-5" id="eventContainer">
+    <div className="container-xl">
+      <div className="row">
+        <div className="col-md-10 mx-auto">
+          <div id="myCarousel" className="carousel slide" data-ride="carousel" data-interval="0">
+          <ol className="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>   
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="row">
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/london.png" className="img-fluid" alt="" />
+                    </div>
+                    <div className="thumb-content">
+                      <h4>London</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>
+                </div>
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/new-york.png" className="img-fluid" alt="" />
+                    </div>
+                    <div className="thumb-content">
+                      <h4>New York</h4>
+                      <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>
+                </div>				
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/paris.png" className="img-fluid" alt="" />
+                    </div>
+                    <div className="thumb-content">
+                      <h4>Paris</h4>
+                      <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>					
+                </div>
+              </div>
             </div>
-            <h6 className="text">Botson</h6>
-            <p className="text-justify mx-5 ml-2 p-4 text-dark">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
-              massa a est pulvinar hendrerit. Ut porttitor nunc at ante
-              pharetra, sit amet fermentum elit eleifend. Duis at pretium erat.
-              Fusce eu nulla lacus. Suspendisse et tincidunt lacus, id
-              ullamcorper neque. Quisque ultricies lectus erat, in tincidunt
-              sapien dignissim quis. Fusce vehicula dolor sed vehicula eleifend.
-              Curabitur sed libero tortor. Duis ornare, diam eget semper
-              aliquet, sem elit condimentum velit, sed ultrices sem ipsum eu
-              nulla. Cras dui libero, viverra sed diam dignissim, cursus
-              venenatis urna. Etiam ultrices tincidunt ipsum quis pellentesque.
-              Duis at rhoncus massa. Ut ut sapien sed est efficitur rhoncus.
-              Vivamus sit amet orci maximus, consectetur eros ut, mollis lorem.
-              Etiam tincidunt sed arcu suscipit maximus.
-            </p>
-          </div>
-          <div style={Events.CARD_STYLE} id="second">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1628438273202-a26e785d044f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80"
-                alt="test"
-              />
+            <div className="carousel-item">
+              <div className="row">
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/kuala-lumpur.png" className="img-fluid" alt="" />
+                    </div>
+                    <div className="thumb-content">
+                      <h4>Kuala Lumpur</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>
+                </div>
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/agra.png" className="img-fluid" alt="" />
+                    </div>
+                    <div className="thumb-content">
+                      <h4>Agra</h4>
+                      <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>
+                </div>
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/dubai.png" className="img-fluid" alt="" />
+                    </div>
+                    <div className="thumb-content">
+                      <h4>Dubai</h4>
+                      <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>					
+                </div>
+              </div>
             </div>
-            <h6 className="text">Botson</h6>
-            <p className="text-justify mx-auto ml-auto p-4 text-dark">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
-              massa a est pulvinar hendrerit. Ut porttitor nunc at ante
-              pharetra, sit amet fermentum elit eleifend. Duis at pretium erat.
-              Fusce eu nulla lacus. Suspendisse et tincidunt lacus, id
-              ullamcorper neque. Quisque ultricies lectus erat, in tincidunt
-              sapien dignissim quis. Fusce vehicula dolor sed vehicula eleifend.
-              Curabitur sed libero tortor. Duis ornare, diam eget semper
-              aliquet, sem elit condimentum velit, sed ultrices sem ipsum eu
-              nulla. Cras dui libero, viverra sed diam dignissim, cursus
-              venenatis urna. Etiam ultrices tincidunt ipsum quis pellentesque.
-              Duis at rhoncus massa. Ut ut sapien sed est efficitur rhoncus.
-              Vivamus sit amet orci maximus, consectetur eros ut, mollis lorem.
-              Etiam tincidunt sed arcu suscipit maximus.
-            </p>
-          </div>
-          <div style={Events.CARD_STYLE} id="third">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1628438273202-a26e785d044f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80"
-                alt="test"
-              />
+            <div className="carousel-item">
+              <div className="row">
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/rio-de-janeiro.png" className="img-fluid" alt=""/>
+                    </div>
+                    <div className="thumb-content">
+                      <h4>Rio De Janeiro</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>
+                </div>
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/giza.png" className="img-fluid" alt=""/>
+                    </div>
+                    <div className="thumb-content">
+                      <h4>Giza</h4>
+                      <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>
+                </div>
+                <div className="col-sm-4">
+                  <div className="thumb-wrapper">
+                    <div className="img-box">
+                      <img src="/examples/images/cities/sydney.png" className="img-fluid" alt="" />
+                    </div>
+                    <div className="thumb-content">
+                      <h4>Sydney</h4>
+                      <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+                      <a href="/" className="btn btn-primary">More <i className="fa fa-angle-right"></i></a>
+                    </div>						
+                  </div>					
+                </div>
+              </div>
             </div>
-            <h6 className="text">Botson</h6>
-            <p className="text-justify mx-5 ml-2 p-4 text-dark">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
-              massa a est pulvinar hendrerit. Ut porttitor nunc at ante
-              pharetra, sit amet fermentum elit eleifend. Duis at pretium erat.
-              Fusce eu nulla lacus. Suspendisse et tincidunt lacus, id
-              ullamcorper neque. Quisque ultricies lectus erat, in tincidunt
-              sapien dignissim quis. Fusce vehicula dolor sed vehicula eleifend.
-              Curabitur sed libero tortor. Duis ornare, diam eget semper
-              aliquet, sem elit condimentum velit, sed ultrices sem ipsum eu
-              nulla. Cras dui libero, viverra sed diam dignissim, cursus
-              venenatis urna. Etiam ultrices tincidunt ipsum quis pellentesque.
-              Duis at rhoncus massa. Ut ut sapien sed est efficitur rhoncus.
-              Vivamus sit amet orci maximus, consectetur eros ut, mollis lorem.
-              Etiam tincidunt sed arcu suscipit maximus.
-            </p>
           </div>
-          <div style={Events.CARD_STYLE} id="fourth">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1628438273202-a26e785d044f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80"
-                alt="test"
-              />
-            </div>
-            <h6 className="text">Botson</h6>
-            <p className="text-justify mx-5 ml-2 p-4 text-dark">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
-              massa a est pulvinar hendrerit. Ut porttitor nunc at ante
-              pharetra, sit amet fermentum elit eleifend. Duis at pretium erat.
-              Fusce eu nulla lacus. Suspendisse et tincidunt lacus, id
-              ullamcorper neque. Quisque ultricies lectus erat, in tincidunt
-              sapien dignissim quis. Fusce vehicula dolor sed vehicula eleifend.
-              Curabitur sed libero tortor. Duis ornare, diam eget semper
-              aliquet, sem elit condimentum velit, sed ultrices sem ipsum eu
-              nulla. Cras dui libero, viverra sed diam dignissim, cursus
-              venenatis urna. Etiam ultrices tincidunt ipsum quis pellentesque.
-              Duis at rhoncus massa. Ut ut sapien sed est efficitur rhoncus.
-              Vivamus sit amet orci maximus, consectetur eros ut, mollis lorem.
-              Etiam tincidunt sed arcu suscipit maximus.
-            </p>
-          </div>
-          <div style={Events.CARD_STYLE} id="fifth">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1628438273202-a26e785d044f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80"
-                alt="test"
-              />
-            </div>
-            <h6 className="text">Botson</h6>
-            <p className="text-justify mx-5 ml-2 p-4 text-dark">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
-              massa a est pulvinar hendrerit. Ut porttitor nunc at ante
-              pharetra, sit amet fermentum elit eleifend. Duis at pretium erat.
-              Fusce eu nulla lacus. Suspendisse et tincidunt lacus, id
-              ullamcorper neque. Quisque ultricies lectus erat, in tincidunt
-              sapien dignissim quis. Fusce vehicula dolor sed vehicula eleifend.
-              Curabitur sed libero tortor. Duis ornare, diam eget semper
-              aliquet, sem elit condimentum velit, sed ultrices sem ipsum eu
-              nulla. Cras dui libero, viverra sed diam dignissim, cursus
-              venenatis urna. Etiam ultrices tincidunt ipsum quis pellentesque.
-              Duis at rhoncus massa. Ut ut sapien sed est efficitur rhoncus.
-              Vivamus sit amet orci maximus, consectetur eros ut, mollis lorem.
-              Etiam tincidunt sed arcu suscipit maximus.
-            </p>
-          </div>
-        </ReactCardCarousel>
+          <a className="carousel-control-prev" href="/myCarousel" data-slide="prev">
+            <i className="fa fa-angle-left"></i>
+          </a>
+          <a className="carousel-control-next" href="/myCarousel" data-slide="next">
+            <i className="fa fa-angle-right"></i>
+          </a>
+        </div>
+        </div>
       </div>
-    );
-  }
-}
+    </div>
+  </div>
+  );
+};
 
 export default Events;
