@@ -4,7 +4,7 @@ import "../App.css";
 import "boxicons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../css/about.scss";
+import "../css/about.scss";git
 
 AOS.init();
 
