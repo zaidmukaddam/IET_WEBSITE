@@ -4,14 +4,17 @@ import Header from "./components/header.js";
 import About from "./components/about";
 import Events from "./components/event.js";
 import Footer from "./components/footer.js";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "boxicons";
+AOS.init();
 function App() {
 /*   var glass = document.getElementsByClassName("glass");
   glass.style.height = "100px";
   var glassHeight = glass.clientHeight + "px"; */
 
   return (
-    <div className="container">
+    <div className="container_main">
       <div className="background">
         <div className="circle1"></div>
         <div className="circle2"></div>

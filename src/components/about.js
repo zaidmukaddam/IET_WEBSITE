@@ -2,11 +2,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../App.css";
 import "boxicons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../css/about.scss";
+
+AOS.init();
 
 const About = () => {
   return (
-    <div className="container-fluid my-5" id="aboutContainer">
+    <div
+      data-aos="slide-left"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-out-quart"
+      className="container-fluid my-5"
+      id="aboutContainer"
+    >
       <div className="row">
         <div className="col-sm-12 col-md-6 col-lg-6 text-center">
           <div className="card mx-4 my-5">

@@ -14,7 +14,7 @@ const Footer = () => {
         className="container-fluid text-center align-items-center"
         id="footer"
       >
-        <div className="container text-center align-items-center">
+        <div className="container-fluid text-center align-items-center">
           <span className="my-2" id="footerHeading">IET MPSTME ON CAMPUS</span>
         </div>
         <div className="row">
@@ -56,7 +56,7 @@ const Footer = () => {
           Copyright © IET MPSTME on Campus {year}
         </div>
       </div>
-     
+
     </div>
   );
 };

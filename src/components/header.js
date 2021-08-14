@@ -8,7 +8,7 @@ import "boxicons";
 import "../css/header.scss";
 import "tilt.js";
 import Tilt from "react-tilt";
-// import iet_logo from "../images/IET_LOGO.png";
+import iet_logo from "../images/IET_LOGO.png";
 
 const Header = () => {
   return (
@@ -20,10 +20,10 @@ const Header = () => {
             <TypedReactHooksDemo />
           </div>
           <div className="quote-small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          We at IET aim to inspire, inform and influence young minds to help engineer a better world.
+          We share knowledge in the fields of engineering and technology to encourage students to
+          find new and innovative solutions to problems which have plagued mankind for decades.
+          We believe in inspiring and enabling the youth of today to use their innovation to make a better world for tomorrow.
           </div>
           <button id="btn">Explore Events!</button>
         </div>
