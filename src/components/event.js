@@ -1,21 +1,21 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../css/events.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import "boxicons";
-
-AOS.init();
+import "./tinglejs.js";
 
 const Events = () => {
+  // AOS.refresh({ useClassNames: true,once: false, });
   return (
     <div
-      data-aos="fade-left"
+      // data-aos="fade-left"
       className="container-fluid my-5"
       id="eventContainer"
     >
       <div className="row">
-        <div className="container">
+        <div className="container-fluid my-2">
           <h3 className="text-center center-square">Events</h3>
           {/* <hr /> */}
         </div>
@@ -28,19 +28,11 @@ const Events = () => {
                 data-ride="carousel"
                 data-interval="0"
               >
-                <ol className="carousel-indicators">
-                  <li
-                    data-target="#myCarousel"
-                    data-slide-to="0"
-                    className="active"
-                  ></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                </ol>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <div className="row">
-                      <div className="col-sm-4">
-                        <div className="thumb-wrapper">
+                      <div className="col-sm-3 py-5">
+                        <div className="thumb-wrapper" id="card1">
                           <div className="img-box">
                             <img
                               src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -54,14 +46,14 @@ const Events = () => {
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Nam eu sem tempor, varius quam.
                             </p>
-                            <a href="/" className="btn btn-primary">
+                            <button className="js-tingle-modal-4 btn btn-primary">
                               More <i className="fa fa-angle-right"></i>
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="thumb-wrapper">
+                      <div className="col-sm-3 py-5">
+                        <div className="thumb-wrapper" id="card2">
                           <div className="img-box">
                             <img
                               src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -81,8 +73,8 @@ const Events = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="thumb-wrapper">
+                      <div className="col-sm-3 py-5">
+                        <div className="thumb-wrapper" id="card3">
                           <div className="img-box">
                             <img
                               src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -102,12 +94,8 @@ const Events = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="row">
-                      <div className="col-sm-4">
-                        <div className="thumb-wrapper">
+                      <div className="col-sm-3 py-5">
+                        <div className="thumb-wrapper" id="card4">
                           <div className="img-box">
                             <img
                               src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -127,119 +115,10 @@ const Events = () => {
                           </div>
                         </div>
                       </div>
-                      {/* <div className="col-sm-4">
-                      <div className="thumb-wrapper">
-                        <div className="img-box">
-                          <img
-                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                            className="img-fluid"
-                            alt=""
-                          />
-                        </div>
-                        <div className="thumb-content">
-                          <h4>Agra</h4>
-                          <p>
-                            Vivamus fermentum in arcu in aliquam. Quisque aliqua
-                            porta odio in fringilla vivamus.
-                          </p>
-                          <a href="/" className="btn btn-primary">
-                            More <i className="fa fa-angle-right"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div> */}
-                      {/* <div className="col-sm-4">
-                      <div className="thumb-wrapper">
-                        <div className="img-box">
-                          <img
-                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                            className="img-fluid"
-                            alt=""
-                          />
-                        </div>
-                        <div className="thumb-content">
-                          <h4>Dubai</h4>
-                          <p>
-                            Convallis eget pretium eu, bibendum non leo. Proin
-                            susc ipit purus adipiscing dolor.
-                          </p>
-                          <a href="/" className="btn btn-primary">
-                            More <i className="fa fa-angle-right"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div> */}
                     </div>
                   </div>
-                  {/* <div className="carousel-item">
-                  <div className="row">
-                    <div className="col-sm-4">
-                      <div className="thumb-wrapper">
-                        <div className="img-box">
-                          <img
-                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                            className="img-fluid"
-                            alt=""
-                          />
-                        </div>
-                        <div className="thumb-content">
-                          <h4>Rio De Janeiro</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nam eu sem tempor, varius quam.
-                          </p>
-                          <a href="/" className="btn btn-primary">
-                            More <i className="fa fa-angle-right"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-sm-4">
-                      <div className="thumb-wrapper">
-                        <div className="img-box">
-                          <img
-                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                            className="img-fluid"
-                            alt=""
-                          />
-                        </div>
-                        <div className="thumb-content">
-                          <h4>Giza</h4>
-                          <p>
-                            Vivamus fermentum in arcu in aliquam. Quisque aliqua
-                            porta odio in fringilla vivamus.
-                          </p>
-                          <a href="/" className="btn btn-primary">
-                            More <i className="fa fa-angle-right"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-sm-4">
-                      <div className="thumb-wrapper">
-                        <div className="img-box">
-                          <img
-                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                            className="img-fluid"
-                            alt=""
-                          />
-                        </div>
-                        <div className="thumb-content">
-                          <h4>Sydney</h4>
-                          <p>
-                            Convallis eget pretium eu, bibendum non leo. Proin
-                            susc ipit purus adipiscing dolor.
-                          </p>
-                          <a href="/" className="btn btn-primary">
-                            More <i className="fa fa-angle-right"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
                 </div>
-                <a
+                {/* <a
                   className="carousel-control-prev"
                   href="#myCarousel"
                   data-slide="prev"
@@ -252,7 +131,7 @@ const Events = () => {
                   data-slide="next"
                 >
                   <box-icon name="right-arrow" type="solid"></box-icon>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

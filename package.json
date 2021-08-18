@@ -19,6 +19,7 @@
     "react-social-icons": "^5.5.1",
     "react-tilt": "^0.1.4",
     "tilt.js": "^1.2.1",
+    "tingle.js": "^0.16.0",
     "typed.js": "^2.0.12",
     "web-vitals": "^1.0.1"
   },

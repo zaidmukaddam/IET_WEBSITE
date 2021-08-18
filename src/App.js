@@ -4,12 +4,15 @@ import Header from "./components/header.js";
 import About from "./components/about";
 import Events from "./components/event.js";
 import Footer from "./components/footer.js";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Tingle from "./components/tinglejs.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "boxicons";
-AOS.init();
+
+AOS.refresh({ useClassNames: true, once: false });
+
 function App() {
-/*   var glass = document.getElementsByClassName("glass");
+  /*   var glass = document.getElementsByClassName("glass");
   glass.style.height = "100px";
   var glassHeight = glass.clientHeight + "px"; */
 
@@ -29,6 +32,7 @@ function App() {
             <About />
             <Events />
             <Footer />
+            {/* <Tingle /> */}
           </section>
         </main>
       </div>

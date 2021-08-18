@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-dark py-5 text-center">
+        <div className="text-dark py-5 text-center " >
           Copyright © IET MPSTME on Campus {year}
         </div>
       </div>

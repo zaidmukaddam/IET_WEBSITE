@@ -4,27 +4,34 @@
 #aboutContainer {
   position: relative;
   overflow: visible;
-/* 030205 */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(35, 188, 255, 0.4)
+  );
+
+  border-radius: 20px;
+  /* 030205 */
   .card-body {
     /*  background: rgba(162, 81, 255, 0); */
-    background: rgb(90, 83, 217, 0.1);
-    background: linear-gradient(
+    background: rgb(255, 255, 255, 1);
+    /*    background: linear-gradient(
       135deg,
       rgba(90, 83, 217, 0.2) 0%,
       rgba(173, 178, 238, 0.8) 100%
-    );
+    ); */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 20px;
     z-index: 12;
     font-family: "Montserrat", sans-serif;
-     border: 2px solid rgba(255, 255, 255, 1);
+    /* border: 2px solid rgba(255, 255, 255, 1); */
     font-size: 1.2em;
     overflow: visible;
   }
   .card {
-   /*  box-shadow: 5px 10px 12px -2px rgb(39, 39, 39, 0.5); */
-    margin-top: 30px;
+    box-shadow: 5px 7px 14px -2px rgb(39, 39, 39, 0.1);
+    margin: 30px 50px 30px 50px;
     background-color: rgba(255, 255, 255, 0.1);
     z-index: 12;
     transition: ease-in-out 700ms;
@@ -40,6 +47,8 @@
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 2px;
+    /*  color: rgb(90, 83, 217); */
+    color: rgba(160, 70, 180, 0.9);
   }
 }
 
@@ -52,10 +61,15 @@
   width: 120px;
   border-radius: 50%;
   background: rgb(140, 48, 255);
-  background: linear-gradient(
+  /*   background: linear-gradient(
     135deg,
     rgba(141, 48, 255, 0.205) 0%,
     rgba(72, 0, 129, 1) 100%
+  ); */
+  background: linear-gradient(
+    135deg,
+    rgba(90, 83, 217, 0.4) 0%,
+    rgba(173, 178, 238, 1) 100%
   );
   top: 10%;
   left: 6%;
@@ -78,3 +92,10 @@
   left: 45%;
 
 } */
+
+@media (max-width: 768px) {
+  .card {
+    margin: 30px 0 30px 0;
+    font-size: 0.72em;
+  }
+}

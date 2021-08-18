@@ -5,12 +5,12 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 600;
-    background: linear-gradient(
+  background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.2) 0%,
     rgba(255, 255, 255, 0.7) 100%
   );
- /*  background: rgb(3, 2, 5, 0.85); */
+  /*  background: rgb(3, 2, 5, 0.85); */
   box-shadow: 2px 4px 32px -10px rgb(39, 39, 39);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
@@ -20,7 +20,8 @@
   z-index: 9;
 
   a {
-    color:  rgb(90, 83, 217);
+    /* color:  rgb(90, 83, 217); */
+    color: rgba(160, 70, 180, 1);
   }
 }
 

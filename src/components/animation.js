@@ -28,13 +28,9 @@ const TypedReactHooksDemo = () => {
 
   return (
     <div className="wrap">
-      {/* <h1>Typed.js</h1> */}
-
       <div className="type-wrap hero_title">
         <span style={{ whiteSpace: "pre" }} ref={el} />
       </div>
-
-      {/* <button onClick={() => typed.current.start()}>Start</button> */}
     </div>
   );
 };

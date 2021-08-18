@@ -19,14 +19,16 @@ $black-60: darken(#fff, 60%);
 $black-70: darken(#fff, 70%);
 $black-80: darken(#fff, 80%);
 $black-90: darken(#fff, 90%);
+
 #eventContainer {
   position: relative;
+
   h3 {
     font-family: "Playfair Display", serif;
-    font-size: 2.6em;
+    font-size: 3em;
     font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: rgba(90, 83, 217, 0.5);
+    text-decoration-color: rgba(160, 70, 180, 0.8);
     text-decoration-thickness: 5px;
     overflow: visible;
   }
@@ -54,10 +56,13 @@ $black-90: darken(#fff, 90%);
       }
     }
   }
-
+  /* .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  } */
   .carousel {
-    margin: 30px auto 60px;
-    padding: 0 40px;
+    /* margin: 30px auto 60px; */
+    /* padding: 0 40px; */
     overflow: visible;
   }
   //   .carousel-item{
@@ -105,14 +110,14 @@ $black-90: darken(#fff, 90%);
   .carousel .thumb-wrapper {
     margin: 5px;
     text-align: left;
-    // Copied to clipboard!
 
-    background: rgba(255, 255, 255, 0.25);
+    /* background: rgba(255, 255, 255, 0.25); */
     // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); */
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    /*   color: #ffffff; */
   }
   .carousel .thumb-content {
     padding: 15px;
@@ -179,5 +184,38 @@ $black-90: darken(#fff, 90%);
     padding: auto;
     margin: 0;
     border-radius: 10px;
+  }
+
+  #card1 {
+    background: rgba(160, 70, 180, 0.6);
+    backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(500px);
+    transition: 500ms ease-in-out;
+  }
+  #card2 {
+    background: rgba(170, 200, 30, 0.6);
+    backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(500px);
+    transition: 500ms ease-in-out;
+  }
+  #card3 {
+    background: rgba(255, 152, 80, 0.6);
+    backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(500px);
+    transition: 500ms ease-in-out;
+  }
+  #card4 {
+    background: rgba(34, 187, 224, 0.6);
+    backdrop-filter: blur(500px);
+    -webkit-backdrop-filter: blur(500px);
+    transition: 500ms ease-in-out;
+  }
+
+  #card1:hover,
+  #card2:hover,
+  #card3:hover,
+  #card4:hover {
+    transform: scale(1.05);
+    transition: 500ms ease-in-out;
   }
 }
