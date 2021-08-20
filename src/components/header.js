@@ -30,14 +30,14 @@ const Header = () => {
           </div>
           <button id="btn">Explore Events!</button>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-6 align-items-center text-center">
+        <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
           <div id="tiltjs" className="align-items-center text-center mx-auto">
             <Tilt
               className="Tilt align-items-center mx-auto"
               options={{ max: 50 }}
               style={{ height: 250, width: 250 }}
             >
-              <div className="Tilt-inner">IET</div>
+              <div className="Tilt-inner"><span>IET</span></div>
             </Tilt>
           </div>
         </div>

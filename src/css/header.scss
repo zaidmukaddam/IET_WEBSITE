@@ -59,12 +59,18 @@
 .Tilt-inner {
   transform: translateZ(200px);
   font-size: 100px;
+
   img {
     margin: 0;
     // padding: 1em;
     width: 1.5em;
     height: 1.5em;
   }
+  // span{
+  //   box-shadow:  50px 50px 100px #0f0e0e,
+  //            -50px -50px 100px #151414;
+  // }
+
 }
 .highlight1 {
   background: rgba(170, 200, 30, 0.4);

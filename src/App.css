@@ -1,11 +1,11 @@
 /* ! ==========> Z-index > 3 <========== */
 
-/* html {
+html {
   height: 100%;
 }
 body {
   min-height: 100%;
-} */
+}
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +24,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  overflow: auto;
   /* overflow:hidden; */
 }
 
@@ -181,6 +182,7 @@ a:hover {
 #root {
   height: 100%;
   width: 100%;
+  overflow: auto;
 }
 @media (max-width: 768px) {
   .glass {

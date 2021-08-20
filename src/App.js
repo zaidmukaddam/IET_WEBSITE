@@ -5,6 +5,7 @@ import About from "./components/about";
 import Events from "./components/event.js";
 import Footer from "./components/footer.js";
 import Tingle from "./components/tinglejs.js";
+import Modal from "./components/modalb4";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "boxicons";
@@ -32,10 +33,12 @@ function App() {
             <About />
             <Events />
             <Footer />
-            {/* <Tingle /> */}
+
           </section>
         </main>
       </div>
+      <Modal />
+      {/* <Tingle /> */}
     </div>
   );
 }

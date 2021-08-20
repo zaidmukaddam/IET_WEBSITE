@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import Modal from "./modalb4";
 import "../css/events.scss";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
@@ -46,7 +47,11 @@ const Events = () => {
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Nam eu sem tempor, varius quam.
                             </p>
-                            <button className="js-tingle-modal-4 btn btn-primary">
+                            <button
+                              className="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#myModal1"
+                            >
                               More <i className="fa fa-angle-right"></i>
                             </button>
                           </div>
@@ -67,9 +72,14 @@ const Events = () => {
                               Vivamus fermentum in arcu in aliquam. Quisque
                               aliqua porta odio in fringilla vivamus.
                             </p>
-                            <a href="/" className="btn btn-primary">
+                            <button
+                              className="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#myModal2"
+                            >
+                              {/* <Modal /> */}
                               More <i className="fa fa-angle-right"></i>
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -88,9 +98,13 @@ const Events = () => {
                               Convallis eget pretium eu, bibendum non leo. Proin
                               susc ipit purus adipiscing dolor.
                             </p>
-                            <a href="/" className="btn btn-primary">
+                            <button
+                              className="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#myModal3"
+                            >
                               More <i className="fa fa-angle-right"></i>
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -109,9 +123,13 @@ const Events = () => {
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Nam eu sem tempor, varius quam.
                             </p>
-                            <a href="/" className="btn btn-primary">
+                            <button
+                              className="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#myModal4"
+                            >
                               More <i className="fa fa-angle-right"></i>
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
