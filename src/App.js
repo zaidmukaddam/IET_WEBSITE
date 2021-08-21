@@ -33,7 +33,6 @@ function App() {
             <About />
             <Events />
             <Footer />
-
           </section>
         </main>
       </div>

@@ -5,15 +5,18 @@ import iet_logo from "../images/IET_LOGO.png";
 import "boxicons";
 
 const NavBar = () => {
-  /*   window.addEventListener("load", () => {
-    window.addEventListener("scroll", (e) => {
+  document.addEventListener("load", () => {
+    document.addEventListener("scroll", (e) => {
       console.log("scrolling");
     });
   });
- */
-  // window.addEventListener("scroll", function(){
-  //  if(window.scrollY > 50){document.getElementsByClassName('navbar-brand').classList.add('fixed-top')}
-  //})
+  /*   document.addEventListener("click", function () {
+            document.getElementById("demo").innerHTML = "Hello World!";
+    }) */
+
+  /*   window.addEventListener("scroll", function(){
+   if(window.scrollY > 50){document.getElementsByClassName('navbar-brand').classList.add('fixed-top')}
+  }) */
 
   return (
     <nav className="navbar navbar-expand-sm fixed-top" id="Navbar">
@@ -28,7 +31,7 @@ const NavBar = () => {
             // height="3%"
           />
         </a>
-        {/* <button className="btn ml-auto mx-3" id="btn">
+        {/*  <button className="btn ml-auto mx-3" id="demo">
           Contact Us
         </button> */}
         <button

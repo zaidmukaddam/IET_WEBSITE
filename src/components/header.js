@@ -12,7 +12,11 @@ import iet_logo from "../images/IET_LOGO.png";
 
 const Header = () => {
   return (
-    <div className="container-fluid my-5" id="headerContainer">
+    <div
+      className="container-fluid my-5"
+      id="headerContainer"
+
+    >
       <div className="row align-items-center my-5">
         <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
           <div id="typist">
@@ -20,13 +24,14 @@ const Header = () => {
             <TypedReactHooksDemo />
           </div>
           <div className="quote-small">
-            We at IET aim to <span className="highlight1">inspire</span>, <span className="highlight2">inform
-           </span> and <span className="highlight3">influence</span> young minds to help engineer a better world. We share
-            knowledge in the fields of engineering and technology to encourage
-            students to find new and innovative solutions to problems which have
-            plagued mankind for decades. We believe in inspiring and enabling
-            the youth of today to use their innovation to make a better world
-            for tomorrow.
+            We at IET aim to <span className="highlight1">inspire</span>,{" "}
+            <span className="highlight2">inform</span> and{" "}
+            <span className="highlight3">influence</span> young minds to help
+            engineer a better world. We share knowledge in the fields of
+            engineering and technology to encourage students to find new and
+            innovative solutions to problems which have plagued mankind for
+            decades. We believe in inspiring and enabling the youth of today to
+            use their innovation to make a better world for tomorrow.
           </div>
           <button id="btn">Explore Events!</button>
         </div>
@@ -37,7 +42,9 @@ const Header = () => {
               options={{ max: 50 }}
               style={{ height: 250, width: 250 }}
             >
-              <div className="Tilt-inner"><span>IET</span></div>
+              <div className="Tilt-inner">
+                <span>IET</span>
+              </div>
             </Tilt>
           </div>
         </div>

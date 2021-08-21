@@ -10,11 +10,7 @@ import "./tinglejs.js";
 const Events = () => {
   // AOS.refresh({ useClassNames: true,once: false, });
   return (
-    <div
-      // data-aos="fade-left"
-      className="container-fluid my-5"
-      id="eventContainer"
-    >
+    <div className="container-fluid my-5" id="eventContainer">
       <div className="row">
         <div className="container-fluid my-2">
           <h3 className="text-center center-square">Events</h3>

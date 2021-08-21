@@ -42,13 +42,16 @@
     transition: ease-in-out 700ms;
   }
 
-  .card-title > small {
-    font-family: "Playfair Display", serif;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    /*  color: rgb(90, 83, 217); */
-    color: rgba(160, 70, 180, 0.9);
+  .card-title {
+    padding: 3px;
+    small {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      /*  color: rgb(90, 83, 217); */
+      color: rgba(160, 70, 180, 0.9);
+    }
   }
 }
 

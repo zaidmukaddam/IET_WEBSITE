@@ -1,11 +1,11 @@
 /* ! ==========> Z-index > 3 <========== */
 
-html {
+/* html {
   height: 100%;
 }
 body {
   min-height: 100%;
-}
+} */
 * {
   padding: 0;
   margin: 0;
@@ -176,7 +176,7 @@ a:hover {
   width: 100%;
   height: 100%;
   /* ?-> WHY? <- */
-  position: absolute;
+/*   position: absolute; */
 }
 
 #root {
