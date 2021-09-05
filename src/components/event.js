@@ -38,10 +38,10 @@ const Events = () => {
                             />
                           </div>
                           <div className="thumb-content">
-                            <h4>London</h4>
+                            <h4>Hack and Code</h4>
                             <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Nam eu sem tempor, varius quam.
+                              Hack n Code is one of the two flagship events of
+                              IET MPSTME on Campus.
                             </p>
                             <button
                               className="btn btn-primary"
@@ -63,10 +63,11 @@ const Events = () => {
                             />
                           </div>
                           <div className="thumb-content">
-                            <h4>New York</h4>
+                            <h4>Botson</h4>
                             <p>
-                              Vivamus fermentum in arcu in aliquam. Quisque
-                              aliqua porta odio in fringilla vivamus.
+                              Our flagship event, BOTSON, is a 2-day workshop
+                              that trains the participants in making a fully
+                              functional bot themselves.
                             </p>
                             <button
                               className="btn btn-primary"
@@ -89,7 +90,7 @@ const Events = () => {
                             />
                           </div>
                           <div className="thumb-content">
-                            <h4>Paris</h4>
+                            <h4>IETalks</h4>
                             <p>
                               Convallis eget pretium eu, bibendum non leo. Proin
                               susc ipit purus adipiscing dolor.
@@ -114,7 +115,7 @@ const Events = () => {
                             />
                           </div>
                           <div className="thumb-content">
-                            <h4>Kuala Lumpur</h4>
+                            <h4>Workshops</h4>
                             <p>
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Nam eu sem tempor, varius quam.

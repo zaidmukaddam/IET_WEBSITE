@@ -46,7 +46,7 @@ const Footer = () => {
               <b>Social</b>
             </h5>
             {/* ! Import correct logos */}
-            <SocialIcon className="social-icons" url="https://instagram.com/jaketrent" />
+            <SocialIcon className="social-icons" url="https://instagram.com/ietmpstme" />
             <SocialIcon className="social-icons" url="https://github.com/jaketrent" />
             <SocialIcon className="social-icons" url="https://twitter.com/jaketrent" />
           </div>

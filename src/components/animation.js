@@ -4,14 +4,14 @@ import Typed from "typed.js";
 const TypedReactHooksDemo = () => {
   // Create reference to store the DOM element containing the animation
   const el = React.useRef(null);
-  // Create reference to store the Typed instance itself
+  // Create referenc`e to store the Typed instance itself
   const typed = React.useRef(null);
 
   React.useEffect(() => {
     const options = {
       strings: ["Integrating.", "Innovation."],
-      typeSpeed: 50,
-      backSpeed: 50,
+      typeSpeed: 100,
+      backSpeed: 60,
       loop: true,
       loopCount: Infinity,
     };
