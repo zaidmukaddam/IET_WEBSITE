@@ -19,6 +19,7 @@
   h5,
   #footerHeading {
     font-family: "Playfair Display", serif !important;
+    color: rgba(160, 70, 180, 1);
   }
   .text-dark {
     font-family: "Montserrat", sans-serif;
@@ -39,7 +40,7 @@
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgb(187, 131, 255) 100%
+    rgba(35, 188, 255, 0.4) /*  rgb(90, 83, 217) 100% */
   );
   z-index: 10;
 }
@@ -49,4 +50,9 @@
   display: inline-block;
   grid-template-rows: auto;
   transform: scale(0.7);
+  transition: ease-in-out 700ms;
+}
+.social-icons:hover {
+  transform: scale(1);
+  transition: ease-in-out 700ms;
 }

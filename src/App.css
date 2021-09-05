@@ -1,11 +1,22 @@
 /* ! ==========> Z-index > 3 <========== */
 
+/* html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+} */
 * {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
   box-sizing: border-box;
 }
+
+/* #root {
+  overflow: auto;
+}
+ */
 .background,
 .foreground {
   width: 100%;
@@ -13,40 +24,31 @@
   position: absolute;
   top: 0;
   left: 0;
+  overflow: auto;
+  /* overflow:hidden; */
 }
 
 /* ?Try this */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.65) 100%
-  );
-  border-radius: 1.5em;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    135deg,
-    rgba(248, 225, 240, 1) 0%,
-    rgba(243, 160, 254, 1) 45%,
-    rgba(87, 79, 184, 1) 100%
-  );
-  border-radius: 0.5rem;
+  width: 0;
+  height: 0;
 }
 .background {
-  background: rgb(248, 225, 240);
+  /*   background: rgb(248, 225, 240);
   background: linear-gradient(
     135deg,
     rgba(248, 225, 240, 1) 0%,
     rgba(243, 160, 254, 1) 45%,
     rgba(87, 79, 184, 1) 100%
-  );
+  ); */
+  /*   background: rgb(205, 232, 248);
+  background: linear-gradient(
+    135deg,
+    rgba(205, 232, 248, 1) 0%,
+    rgba(212, 228, 252, 1) 50%,
+    rgba(226, 213, 251, 1) 100%
+  ); */
+  background: rgb(255, 255, 255);
 }
 .foreground {
   /* !Try making this smaller so that you get a card layout */
@@ -73,7 +75,12 @@ a:hover {
   font-size: 1rem;
   width: 10rem;
   height: 35px;
-  background: linear-gradient(45deg, #7061fb, #15bdff);
+
+  background: linear-gradient(
+    90deg,
+    rgba(222, 72, 255, 1) 0%,
+    rgba(255, 152, 80, 1) 100%
+  );
   border-radius: 2rem;
   border: none;
   -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -97,11 +104,11 @@ a:hover {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.65) 100%
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.2) 100%
   );
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(5rem);
+  -webkit-backdrop-filter: blur(5rem);
   /*  z-index: 3; */
   position: relative;
   /* ?Try this */
@@ -112,61 +119,81 @@ a:hover {
   /* ?Try this */
   border-radius: 20px;
   /* overflow-y: visible; */
-  box-shadow: 2px 4px 32px -10px rgb(39, 39, 39);
+  box-shadow: 10px 4px 32px -20px; /* rgba(90, 84, 217, 1) */
   height: max-content;
 }
 .circle1,
 .circle2,
 .circle3 {
   position: absolute;
-  height: 20rem;
-  width: 20rem;
-  top: -10%;
-  left: -10%;
+  height: 40rem;
+  width: 40rem;
+  top: -30%;
+  left: -30%;
   border-radius: 50%;
   background: rgb(140, 48, 255);
+  background: rgb(160, 70, 180);
   background: linear-gradient(
     135deg,
-    rgba(141, 48, 255, 0.205) 0%,
-    rgba(72, 0, 129, 1) 100%
+    rgba(160, 70, 180, 1) 0%,
+    rgba(249, 222, 255, 1) 100%
   );
+  /*   background: linear-gradient(
+    135deg,
+    rgba(90, 83, 217, 0.4) 0%,
+    rgba(173, 178, 238, 1) 100%
+  ); */
   z-index: 2;
 }
 
 .circle2 {
   left: 80%;
   top: 60%;
-  /*   background: rgb(24, 127, 255);
+  background: rgb(246, 255, 203);
   background: linear-gradient(
     135deg,
-    rgba(24, 127, 255, 1) 0%,
-    rgba(0, 255, 126, 1) 100%
-  ); */
+    rgba(246, 255, 203, 1) 0%,
+    rgba(170, 200, 30, 1) 100%
+  );
 }
 
 .circle3 {
-  top: 90%;
+  top: 80%;
   left: 10%;
-  height: 10rem;
-  width: 10rem;
-  /*    background: rgb(255, 243, 24);
+  height: 30rem;
+  width: 30rem;
+  background: rgb(207, 246, 255);
   background: linear-gradient(
     135deg,
-    rgba(255, 243, 24, 1) 0%,
-    rgba(0, 230, 255, 1) 100%
-  ); */
+    rgba(207, 246, 255, 1) 0%,
+    rgba(34, 187, 224, 1) 100%
+  );
 }
 
 /* ! ==========> khush <========== */
 
-/* .container {
+.container_main {
   width: 100%;
-} */
+  height: 100%;
+  /* ?-> WHY? <- */
+/*   position: absolute; */
+}
 
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
 @media (max-width: 768px) {
   .glass {
     margin: 0 !important;
     padding: 0;
-    border:none;
+    border: none;
+  }
+  .circle1 {
+    top: -10%;
+    left: -10%;
+    height: 15em;
+    width: 15em;
   }
 }

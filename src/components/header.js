@@ -8,33 +8,43 @@ import "boxicons";
 import "../css/header.scss";
 import "tilt.js";
 import Tilt from "react-tilt";
-// import iet_logo from "../images/IET_LOGO.png";
+import iet_logo from "../images/IET_LOGO.png";
 
 const Header = () => {
   return (
-    <div className="container-fluid my-5" id="headerContainer">
-      <div className="row align-items-center mx-5">
-        <div className="col-sm-12 col-md-6 col-lg-6 align-items-center">
+    <div
+      className="container-fluid my-5"
+      id="headerContainer"
+
+    >
+      <div className="row align-items-center my-5">
+        <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
           <div id="typist">
             {/*  <box-icon name="quote" id="quote" color="black" size="100px"></box-icon>  */}
             <TypedReactHooksDemo />
           </div>
           <div className="quote-small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            We at IET aim to <span className="highlight1">inspire</span>,{" "}
+            <span className="highlight2">inform</span> and{" "}
+            <span className="highlight3">influence</span> young minds to help
+            engineer a better world. We share knowledge in the fields of
+            engineering and technology to encourage students to find new and
+            innovative solutions to problems which have plagued mankind for
+            decades. We believe in inspiring and enabling the youth of today to
+            use their innovation to make a better world for tomorrow.
           </div>
           <button id="btn">Explore Events!</button>
         </div>
-        <div className="col-sm-12 col-md-6 col-lg-6 align-items-center text-center">
+        <div className="col-sm-12 col-md-12 col-lg-12 align-items-center text-center">
           <div id="tiltjs" className="align-items-center text-center mx-auto">
             <Tilt
               className="Tilt align-items-center mx-auto"
               options={{ max: 50 }}
               style={{ height: 250, width: 250 }}
             >
-              <div className="Tilt-inner">IET</div>
+              <div className="Tilt-inner">
+                <span>IET</span>
+              </div>
             </Tilt>
           </div>
         </div>

@@ -5,30 +5,37 @@
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
+
   #btn {
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 14px;
     height: 40px;
     width: 170px;
+      font-size: 1.2rem;
   }
 }
 
 #typist {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-size: 3em;
+  font-size: 88px;
+  margin-bottom: 50px;
+  color: rgba(160, 70, 180, 0.8);
 }
 
 .quote-small {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
-  /* margin-top: 10px;
-  margin-right: 40px; */
+  font-size: 1.7em;
+  /* margin-top: 100px; */
+  /*  margin-right: 40px; */
+  margin: 0 100px 0 100px;
 }
 
 #tiltjs {
-  /* padding: 2rem; */
+  padding: 2rem;
 }
 
 .Tilt {
@@ -52,8 +59,36 @@
 .Tilt-inner {
   transform: translateZ(200px);
   font-size: 100px;
+
+  img {
+    margin: 0;
+    // padding: 1em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  // span{
+  //   box-shadow:  50px 50px 100px #0f0e0e,
+  //            -50px -50px 100px #151414;
+  // }
+
 }
-/*
-.quote{
-    z-index:4;
-} */
+.highlight1 {
+  background: rgba(170, 200, 30, 0.4);
+}
+
+.highlight2 {
+  background: rgba(35, 188, 255, 0.4);
+}
+.highlight3 {
+  background: rgba(238, 117, 32, 0.4);
+}
+
+@media (max-width: 768px) {
+  #typist {
+    font-size: 40px;
+  }
+  .quote-small {
+    font-size: 1.2em;
+    margin: 0 10px 0 10px;
+  }
+}
