@@ -176,7 +176,7 @@ a:hover {
   width: 100%;
   height: 100%;
   /* ?-> WHY? <- */
-/*   position: absolute; */
+  /*   position: absolute; */
 }
 
 #root {
@@ -196,4 +196,24 @@ a:hover {
     height: 15em;
     width: 15em;
   }
+}
+
+/* !===To Top Button===! */
+
+.toTopButton {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #f398fe;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  z-index: 14;
+}
+.upIcon {
+  width: 40%;
+  height: 40%;
+  margin: 15px auto;
+  /* padding: auto; */
+  position: relative;
 }

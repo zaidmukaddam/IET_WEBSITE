@@ -9,7 +9,7 @@ const Modal = () => {
         <div className="modal-dialog modal-xl modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
-              <h4 className="modal-title">Hack n Code</h4>
+              <h4 className="modal-title mx-auto">Hack n Code</h4>
               <button type="button" className="close" data-dismiss="modal">
                 &times;
               </button>
@@ -154,7 +154,7 @@ const Modal = () => {
             <div className="modal-body">
               <div className="row my-5">
                 <div className="col-sm-12 col-md-6 col-lg-6 ">
-                  <h1>What is Hack n Code?</h1>
+                  <h1>What is Botson?</h1>
                   <p>
                     Our flagship event, BOTSON, is a 2-day workshop that trains
                     the participants in making a fully functional bot
@@ -178,15 +178,7 @@ const Modal = () => {
                 <div className="col-lg-12 col-sm-12 col-md-12 text-center my-5">
                   <h2>Insert another heading here</h2>
                   <ul>
-                    <li>
-                      <p>
-                        BOTSON is one of the best events to learn to make bots
-                        from scratch. From learning about various parts to fully
-                        construct it. With over 100 participants this 2-day
-                        event is full of discussions. The participants are
-                        taught the basics of arduino and how its used.
-                      </p>
-                    </li>
+                    <li>List item 1</li>
                     <li>List item 2</li>
                     <li>List item 3</li>
                     <li>List item 4</li>
@@ -195,7 +187,13 @@ const Modal = () => {
               </div>
               <h1>Terms of use</h1>
               <h2>Boring first article</h2>
-
+              <p>
+                BOTSON is one of the best events to learn to make bots from
+                scratch. From learning about various parts to fully construct
+                it. With over 100 participants this 2-day event is full of
+                discussions. The participants are taught the basics of arduino
+                and how its used.
+              </p>
               <h2>Boring second article</h2>
               <p>
                 This event is not only about robotics, but also about
@@ -289,15 +287,17 @@ const Modal = () => {
             <div className="modal-body">
               <div className="row my-5">
                 <div className="col-sm-12 col-md-6 col-lg-6 ">
-                  <h1>What is Hack n Code?</h1>
+                  <h1>What is IET Talks?</h1>
                   <p>
-                    Hack n Code is one of the two flagship events of IET MPSTME
-                    on Campus. The hackathon spans over two days and is a total
-                    of 16 hours long, during which participants code a solution
-                    to a problem statement presented before them. The two-day
-                    event is an enthralling experience where budding coders
-                    learn how to get started with competitive programming and
-                    experienced coders put their coding skills to test. F
+                    IETalks, an initiative of IET MPSTME, was created to give
+                    young students an idea of what is expected of them in the
+                    real world. A highly trained professional speaks elaborately
+                    and takes up questions the students might have regarding the
+                    working of the enormous industrial world and its nuances.
+                    Especially in these ever-changing landscapes of engineering
+                    and technology, IETalks aims to provide a platform for
+                    students and professionals to connect and create an
+                    environment of exposure and learning.
                   </p>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6 my-auto">
@@ -425,15 +425,14 @@ const Modal = () => {
             <div className="modal-body">
               <div className="row my-5">
                 <div className="col-sm-12 col-md-6 col-lg-6 ">
-                  <h1>What is Hack n Code?</h1>
+                  <h1>Python Workshop</h1>
                   <p>
-                    Hack n Code is one of the two flagship events of IET MPSTME
-                    on Campus. The hackathon spans over two days and is a total
-                    of 16 hours long, during which participants code a solution
-                    to a problem statement presented before them. The two-day
-                    event is an enthralling experience where budding coders
-                    learn how to get started with competitive programming and
-                    experienced coders put their coding skills to test. F
+                    The Python workshop organised by IET MPSTME on Campus aims
+                    to teach participants the fundamentals of Python, which is
+                    currently one of the most popular programming languages in
+                    the world. The workshop lasts over two days and is a great
+                    learning experience as participants get practical knowledge
+                    from an expert in the subject.
                   </p>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6 my-auto">
@@ -457,22 +456,21 @@ const Modal = () => {
               <h1>Terms of use</h1>
               <h2>Boring first article</h2>
               <p>
-                Sed posuere consectetur est at lobortis. Curabitur blandit
-                tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut
-                id elit. Donec id elit non mi porta gravida at eget metus.
-                Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac
-                cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                massa justo sit amet risus. Praesent commodo cursus magna, vel
-                scelerisque nisl consectetur et.
+                This workshop is a great opportunity for participants to learn
+                about python right from the very basics. The participants are
+                first taught the process of installation of python. Following
+                the installation, a range of concepts is covered during the
+                workshop. These include variables, data types- int, float, etc,
+                conditional statements, loops and data structures such as lists,
+                dictionaries and tuples.
               </p>
               <h2>Boring second article</h2>
               <p>
-                Etiam porta sem malesuada magna mollis euismod. Morbi leo risus,
-                porta ac consectetur ac, vestibulum at eros. Cras justo odio,
-                dapibus ac facilisis in, egestas eget quam. Cras mattis
-                consectetur purus sit amet fermentum. Vestibulum id ligula porta
-                felis euismod semper. Cras mattis consectetur purus sit amet
-                fermentum. Nulla vitae elit libero, a pharetra augue.
+                In accordance with the popular saying, “Tell me and I forget,
+                teach me and I remember, involve me and I learn,” the Python
+                workshop is a highly interactive session. Participants are
+                encouraged to implement the concepts side by side with the
+                instructor and all their doubts are expertly resolved.
               </p>
               <h2>Boring third article</h2>
               <p>
@@ -484,12 +482,12 @@ const Modal = () => {
                 aliquet.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                posuere consectetur est at lobortis. Donec id elit non mi porta
-                gravida at eget metus. Curabitur blandit tempus porttitor. Cras
-                justo odio, dapibus ac facilisis in, egestas eget quam. Donec
-                ullamcorper nulla non metus auctor fringilla. Vestibulum id
-                ligula porta felis euismod semper.
+                Every year the Python workshop has been a great success. IET
+                MPSTME on Campus has always received positive feedback from
+                both- the participants and the instructors. In the short span of
+                two days, the participants are exposed to the plethora of
+                avenues they can explore by being handy in the Python
+                programming language.
               </p>
 
               <p>

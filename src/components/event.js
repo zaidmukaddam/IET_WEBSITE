@@ -7,7 +7,7 @@ import "../css/events.scss";
 import "boxicons";
 import "./tinglejs.js";
 
-const Events = () => {
+const Event = () => {
   // AOS.refresh({ useClassNames: true,once: false, });
   return (
     <div className="container-fluid my-5" id="eventContainer">
@@ -156,4 +156,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Event;
